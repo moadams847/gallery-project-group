@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Art Gallery</title>
 
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/c828cc6e39.js"
+      crossorigin="anonymous"
+    ></script>
+
     <!-- boostrap icons -->
     <link
       rel="stylesheet"
@@ -14,12 +20,14 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <!-- showcase -->
     <header id="showcase">
       <div class="container-fluid">
         <div class="showcase-content">
           <h1 class="l-heading">
-            <div class="modern">MODERN</div>
-            <div class="same-line">ART GAL<span>LERY</span></div>
+            <span class="modern">MODER</span
+            ><span class="half-color" attribute="N">N</span>
+            <span class="same-line">ART GAL<span>LERY</span></span>
           </h1>
           <div class="items">
             <p class="text-lead">
@@ -41,5 +49,83 @@
         </a> -->
       </div>
     </header>
+
+    <!--the-gallery -->
+
+    <section id="the-gallery" class="bg-light">
+      <div class="container-xl">
+        <!-- flex container-1 -->
+        <div class="flex-conatainer-1">
+          <div class="flex-text-content">
+            <h1 class="s-heading">YOUR DAY AT THE GALLERY</h1>
+            <p class="text-lead-small">
+              Wonder through our district collections and find new insights
+              about our artists. Dive into the details of their creative
+              process.
+            </p>
+          </div>
+          <div class="flex-image-content">
+            <img src="img/assets/desktop/image-grid-1.jpg" alt="The Gallery" />
+          </div>
+        </div>
+
+        <!-- flex container-2 -->
+
+        <div class="flex-container-2">
+          <div class="flex-item-1">
+            <img src="img/assets/desktop/image-grid-2.jpg" alt="The Gallery" />
+          </div>
+
+          <!-- -->
+          <div class="flex-item-2">
+            <div class="flex-item-2-img-div">
+              <img
+                src="img/assets/desktop/image-grid-3@2x.jpg"
+                alt="The Gallery"
+              />
+            </div>
+            <div class="card bg-dark">
+              <div class="card-text">
+                <h1 class="m-heading">
+                  COME & BE<span style="display: block">INSPIRED</span>
+                </h1>
+                <p class="text-lead-small">
+                  We’re excited to welcome you to our gallery and see how our
+                  collections influence you.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+
+    <footer class="bg-dark">
+      <div class="container-xl">
+        <div class="footer-flex-container">
+          <h2 class="smaller-heading">
+            MODERN
+            <span style="display: block"> ART GALLERY </span>
+          </h2>
+          <p class="text-lead-smaller">
+            The Modern Art Gallery is free to all visitors and open seven days a
+            week from 8am to 9pm. Find us at 99 King Street, Newport, USA.
+          </p>
+          <div class="font-icons">
+            <span
+              ><a href="#"><i class="bi bi-facebook bs-3"></i></a
+            ></span>
+            <span>
+              <a href="#"><i class="bi bi-instagram bs-3"></i></a
+            ></span>
+            <span>
+              <a href="#"><i class="bi bi-twitter bs-3"></i></a
+            ></span>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

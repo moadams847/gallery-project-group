@@ -39,21 +39,25 @@ a {
 .container-xxl {
   max-width: 1320px;
   overflow: hidden;
+  margin: 0 auto;
 }
 
 .container-xl {
   max-width: 1140px;
   overflow: hidden;
+  margin: 0 auto;
 }
 
 .container-lg {
   max-width: 960px;
   overflow: hidden;
+  margin: 0 auto;
 }
 
 .container-m {
   max-width: 720px;
   overflow: hidden;
+  margin: 0 auto;
 }
 
 .container-fluid {
@@ -89,6 +93,13 @@ a {
   line-height: 3.6rem;
 }
 
+.smaller-heading {
+  font-family: "Big Shoulders Display", sans-serif;
+  color: var(--light-color);
+  font-size: 2.6rem;
+  line-height: 2.6rem;
+}
+
 .text-lead {
   font-family: "Outfit", sans-serif;
   color: var(--light-dark-color);
@@ -98,13 +109,38 @@ a {
 
 .text-lead-small {
   font-family: "Outfit", sans-serif;
-  color: var(--light-color);
   font-size: 1.8rem;
   line-height: 2.8rem;
 }
 
+.text-lead-smaller {
+  font-family: "Outfit", sans-serif;
+  color: var(--light-color);
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
 .bg-dark {
   background: var(--dark-color);
+}
+
+.bg-light {
+  background: var(--light-color);
+}
+
+.bs-1 {
+  font-size: 2rem;
+}
+
+.bs-2 {
+  font-size: 1.5rem;
+}
+.bs-3 {
+  font-size: 2.5rem;
+}
+
+.bs-4 {
+  font-size: 3rem;
 }
 
 a.btn-right {
@@ -205,16 +241,36 @@ a.btn-left:hover {
 #showcase .showcase-content .l-heading {
   color: var(--light-color);
   width: 35%;
-  margin-left: 9rem;
+  margin-left: 7.5rem;
 }
 
 #showcase .showcase-content .modern {
-  margin-left: 0.6rem;
+  margin-left: 0.3rem;
+}
+
+#showcase .l-heading .half-color {
+  padding: 0px;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+  color: var(--dark-color);
+}
+
+#showcase .l-heading .half-color:after {
+  content: attr(attribute);
+  color: var(--light-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70%;
+  overflow: hidden;
+  z-index: 2;
 }
 
 #showcase .showcase-content .same-line {
+  display: inline-block;
   width: 100%;
-  margin-left: 14.9rem;
+  margin-left: 14.6rem;
   color: var(--light-color);
 }
 
@@ -232,6 +288,114 @@ a.btn-left:hover {
 }
 
 #showcase .showcase-content .items p {
-  margin-left: 9.8rem;
+  margin-left: 10rem;
   margin-bottom: 5rem;
+}
+
+#the-gallery {
+  margin-top: 15rem;
+}
+
+#the-gallery .flex-conatainer-1 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+#the-gallery .flex-conatainer-1 .flex-text-content {
+  width: 25%;
+  align-self: center;
+}
+
+#the-gallery .flex-conatainer-1 .flex-text-content h1 {
+  margin-bottom: 2rem;
+}
+
+#the-gallery .flex-conatainer-1 .flex-image-content img {
+  display: inline-block;
+  height: auto;
+}
+
+/* flext-container-2 */
+#the-gallery .flex-container-2 {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+#the-gallery .flex-container-2 .flex-item-1 {
+}
+
+/*  */
+#the-gallery .flex-container-2 .flex-item-2 {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2rem;
+}
+
+#the-gallery .flex-container-2 .flex-item-2 .flex-item-2-img-div {
+  height: 50%;
+  margin-bottom: 2rem;
+}
+
+#the-gallery .flex-container-2 .flex-item-2 .flex-item-2-img-div img {
+  width: 100%;
+  height: 100%;
+}
+
+#the-gallery .flex-container-2 .flex-item-2 .card {
+  color: var(--light-color);
+  height: 50%;
+}
+
+#the-gallery .flex-container-2 .flex-item-2 .card .card-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 0 9rem;
+}
+
+#the-gallery .flex-container-2 .flex-item-2 .card .m-heading {
+  color: var(--light-color);
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+/* footer */
+footer {
+  color: var(--light-color);
+  margin-top: 15rem;
+  padding: 5rem 0;
+}
+
+.footer-flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .footer-flex-container h2 {
+  width: 20%;
+}
+
+footer .footer-flex-container p {
+  width: 30%;
+  /* padding: 0 20rem; */
+}
+
+footer .footer-flex-container .ont-icons {
+  width: 25%;
+}
+
+footer .footer-flex-container .font-icons span {
+  display: inline-block;
+  padding: 0.5rem;
+}
+
+footer .footer-flex-container .font-icons span a {
+  color: var(--light-color);
+  transition: all 400ms ease-in-out;
+}
+
+footer .footer-flex-container .font-icons span a:hover {
+  color: var(--primary-color);
 }
